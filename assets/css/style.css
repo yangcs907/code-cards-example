@@ -1,0 +1,108 @@
+:root {
+  --background-color-element: rgba(255,255,255,0.15);
+  --padding-standard: 1em;
+  --border-radius-standard: 0.5em;
+  --border-width-standard: 0.1em;
+}
+
+body {
+  background-image: url("../images/dark-beach.jpg");
+  background-size: 130%;
+  color: rgba(255,255,255,0.8);
+  font-family: "Avenir", sans-serif;
+  padding: var(--padding-standard);
+  font-size: 1.1em;
+}
+
+header {
+  margin: 1em;
+  text-align: center;
+  font-size: 160%;
+  font-weight: bold;
+}
+
+.card-container {
+  padding: var(--padding-standard);
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 1em;
+  border-style: solid;
+  border-radius: var(--border-radius-standard);
+  border-width: var(--border-width-standard);
+  padding: var(--padding-standard);
+  background-color: var(--background-color-element);
+}
+
+.card-header {
+  border-style: solid;
+  border-radius: var(--border-radius-standard);
+  border-width: var(--border-width-standard);
+  text-align: center;
+  padding: 0.5em;
+  background-color: var(--background-color-element);
+  font-weight: bold;
+}
+
+.card-text {
+  padding-top: var(--padding-standard);
+  padding-bottom: var(--padding-standard);
+}
+
+.card-code {
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  border-radius: var(--border-radius-standard);
+  padding: 0.5em;
+}
+
+.link-icon {
+  font-weight: bold;
+  font-size: 85%;
+}
+
+.card-link {
+  padding-top: var(--padding-standard);
+  font-size: 85%;
+}
+
+a {
+  color: rgba(135,206,250,0.9);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgba(135,206,250,1);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--background-color-element);
+  padding: 0.7em;
+  font-size: 0.8em;
+}
+
+@media only screen and (max-width: 1025px) {
+  body {
+    background-size: cover;
+    padding: 0em;
+    margin: 0em;
+  }
+  .card-row {
+    display: block;
+    flex: none;
+  }
+  footer {
+    position: relative;
+    background: none;
+  }
+}
